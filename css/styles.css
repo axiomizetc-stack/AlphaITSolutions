@@ -127,7 +127,33 @@ nav a:hover { color: var(--ink); }
   width: min(1080px, calc(100% - 12vw));
   margin-inline: auto;
 }
-.hero { padding: 6.2rem 0 4.8rem; }
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 5.2rem 0 4.4rem;
+}
+.hero-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+}
+.hero-mark::before {
+  content: "";
+  position: absolute;
+  width: 78%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(63, 79, 50, 0.12), transparent 68%);
+}
+.hero-mark img {
+  position: relative;
+  width: min(100%, 420px);
+  height: auto;
+  filter: drop-shadow(0 28px 50px rgba(63, 79, 50, 0.16));
+}
 .eyebrow {
   display: inline-flex;
   margin: 0 0 1.1rem;
@@ -333,7 +359,9 @@ footer {
     border-bottom: 1px solid var(--line);
   }
   nav.is-open { display: flex; }
-  .services, .contact, footer, .order-form { grid-template-columns: 1fr; }
+  .hero, .services, .contact, footer, .order-form { grid-template-columns: 1fr; }
+  .hero-mark { min-height: 0; }
+  .hero-mark img { width: min(58vw, 220px); }
   .contact { width: min(1080px, calc(100% - 8vw)); }
   h1 { max-width: none; }
 }
