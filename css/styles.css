@@ -56,27 +56,10 @@ p { margin: 0; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
   text-decoration: none;
   margin-right: auto;
 }
-.logo img { width: 42px; height: 42px; display: block; }
-.logo-type {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--serif);
-  font-size: 1.25rem;
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-}
-.logo-type small {
-  font-family: var(--sans);
-  font-size: 0.64rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--olive);
-  font-weight: 650;
-}
+.logo img { width: 188px; height: auto; display: block; }
 nav { display: flex; gap: 1.4rem; }
 nav a {
   text-decoration: none;
@@ -337,6 +320,7 @@ footer {
 @media (max-width: 860px) {
   .menu-toggle { display: inline-block; }
   .header-wa { display: none; }
+  .logo img { width: 156px; }
   nav {
     display: none;
     position: absolute;
