@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="bs">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alpha IT Solutions | Web stranice, održavanje i QA</title>
+    <title>Alpha IT Solutions | Websites, maintenance, and QA</title>
     <meta
       name="description"
-      content="Alpha IT Solutions, obrt Izeta Čopelja. Web stranice, održavanje i QA. axiomizetc@gmail.com · 061 834 552."
+      content="Alpha IT Solutions, the business of Izet Čopelj. Websites, maintenance, and QA. axiomizetc@gmail.com · 061 834 552."
     />
     <meta name="theme-color" content="#3f4f32" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -22,7 +22,7 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Alpha IT Solutions",
-        "description": "Web stranice, održavanje i QA.",
+        "description": "Websites, maintenance, and QA.",
         "email": "axiomizetc@gmail.com",
         "telephone": "+38761834552",
         "founder": {
@@ -34,29 +34,38 @@
     </script>
   </head>
   <body>
-    <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+    <a class="skip" href="#sadrzaj" data-i18n="skip">Skip to content</a>
     <header class="site-header">
-      <a class="logo" href="#vrh">Alpha <span>IT</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Meni">
+      <a class="logo" href="#vrh" aria-label="Alpha IT Solutions">
+        <img src="logo.svg" alt="" width="46" height="46" />
+        <span class="logo-type">Alpha <small>IT Solutions</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" data-i18n-aria="nav.menu" aria-label="Menu">
         <span></span><span></span>
       </button>
       <nav id="nav">
-        <a href="#usluge">Usluge</a>
+        <a href="#usluge" data-i18n="nav.services">Services</a>
         <a href="#qa">QA</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#kontakt" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a class="header-mail" href="mailto:axiomizetc@gmail.com">axiomizetc@gmail.com</a>
+      <div class="header-end">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="bs" aria-pressed="false">BS</button>
+        </div>
+        <a class="header-mail" href="mailto:axiomizetc@gmail.com">axiomizetc@gmail.com</a>
+      </div>
     </header>
 
     <main id="sadrzaj">
       <section class="hero" id="vrh">
-        <p class="eyebrow">Obrt · Izet Čopelj</p>
-        <h1>Web stranice, održavanje i QA.</h1>
-        <p class="lead">
-          Alpha IT Solutions pravi stranice, drži ih urednim nakon objave i provjerava da rade prije nego što ih neko vidi. Razgovarate direktno sa mnom.
+        <p class="eyebrow" data-i18n="hero.eyebrow">Sole proprietorship · Izet Čopelj</p>
+        <h1 data-i18n="hero.title">Websites, maintenance, and QA.</h1>
+        <p class="lead" data-i18n="hero.lead">
+          Alpha IT Solutions builds sites, keeps them tidy after launch, and checks that they work before anyone else sees them. You talk to me directly.
         </p>
         <div class="actions">
-          <a class="btn btn-solid" href="#kontakt">Javite se</a>
+          <a class="btn btn-solid" href="#kontakt" data-i18n="hero.primary">Get in touch</a>
           <a class="btn btn-line" href="tel:+38761834552">061 834 552</a>
         </div>
       </section>
@@ -65,47 +74,47 @@
         <article>
           <span>01</span>
           <div>
-            <h2>Web stranice</h2>
-            <p>Nova stranica od dogovora do objave. Jednostavna, jasna i uredna na telefonu.</p>
+            <h2 data-i18n="services.1.title">Websites</h2>
+            <p data-i18n="services.1.text">A new site from the brief to launch. Simple, clear, and tidy on a phone.</p>
           </div>
         </article>
         <article>
           <span>02</span>
           <div>
-            <h2>Održavanje</h2>
-            <p>Izmjene, popravke i briga da stranica ostane online kad je posao već gotov.</p>
+            <h2 data-i18n="services.2.title">Maintenance</h2>
+            <p data-i18n="services.2.text">Changes, fixes, and care so the site stays online after the work is done.</p>
           </div>
         </article>
         <article id="qa">
           <span>03</span>
           <div>
             <h2>QA</h2>
-            <p>Testiram tokove, forme i prikaz. Greške prijavim jasno, prije nego što odu korisnicima.</p>
+            <p data-i18n="services.3.text">I test flows, forms, and layout. Bugs are reported clearly, before they reach users.</p>
           </div>
         </article>
       </section>
 
       <section class="note">
-        <p>Kažete šta treba. Ja kažem šta mogu, koliko traje i kad je gotovo. Bez posrednika.</p>
+        <p data-i18n="note">You say what you need. I say what I can do, how long it takes, and when it is finished. No middleman.</p>
         <strong>Izet Čopelj</strong>
       </section>
 
       <section class="contact" id="kontakt">
         <div>
-          <p class="eyebrow">Kontakt</p>
-          <h2>Pišite ili nazovite.</h2>
+          <p class="eyebrow" data-i18n="contact.kicker">Contact</p>
+          <h2 data-i18n="contact.title">Write or call.</h2>
         </div>
         <ul>
           <li>
-            <span>Osoba</span>
+            <span data-i18n="contact.person">Person</span>
             <strong>Izet Čopelj</strong>
           </li>
           <li>
-            <span>E-pošta</span>
+            <span data-i18n="contact.email">Email</span>
             <a href="mailto:axiomizetc@gmail.com">axiomizetc@gmail.com</a>
           </li>
           <li>
-            <span>Telefon</span>
+            <span data-i18n="contact.phone">Phone</span>
             <a href="tel:+38761834552">061 834 552</a>
           </li>
         </ul>

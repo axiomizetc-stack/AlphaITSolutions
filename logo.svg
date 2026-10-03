@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Alpha IT Solutions">
   <circle cx="40" cy="40" r="38" fill="#3f4f32"/>
   <circle cx="40" cy="40" r="31.5" fill="none" stroke="#e7efe0" stroke-width="1.2"/>
   <path fill="#ffffff" d="M40 16.5 54.5 56h-7.1l-2.7-8.2H35.3L32.6 56h-7.1L40 16.5Zm-2.9 25.2h5.8L40 31.2l-2.9 10.5Z"/>
   <path fill="#d5e2c6" d="M24 58.5c7.2-1.2 12.4-7.4 11.2-14.2-7.4 1.6-12.2 8.2-11.2 14.2Z"/>
+  <path fill="#d5e2c6" d="M22.5 55.2c2.2 4.8 8.4 6.6 12.6 4.2-3.2-4.2-9.6-5.6-12.6-4.2Z"/>
 </svg>
