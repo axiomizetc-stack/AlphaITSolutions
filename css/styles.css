@@ -175,7 +175,7 @@ nav a:hover { color: var(--ink); }
   background: var(--ink);
 }
 
-.hero, .services, .about, footer {
+.hero, .services, .about, .work, footer {
   width: min(1080px, calc(100% - 12vw));
   margin-inline: auto;
 }
@@ -293,6 +293,37 @@ h1 { font-size: clamp(3.1rem, 8vw, 6.1rem); max-width: 12ch; }
   text-transform: uppercase;
   color: var(--olive);
 }
+
+.work { padding: 0 0 5rem; }
+.work h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.4rem; }
+.work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.work article {
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 1.5rem;
+  padding: 1.4rem 1.3rem 1.5rem;
+  display: grid;
+  gap: 0.55rem;
+}
+.work article span {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--olive);
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+.work h3 { font-size: 1.45rem; font-family: var(--serif); font-weight: 520; }
+.work p { color: var(--muted); }
+.work a {
+  color: var(--olive);
+  font-weight: 650;
+  text-decoration: none;
+  width: fit-content;
+}
+.work a:hover { text-decoration: underline; }
 
 .contact {
   width: min(1080px, calc(100% - 8vw));
@@ -417,7 +448,7 @@ footer {
     border-bottom: 1px solid var(--line);
   }
   nav.is-open { display: flex; }
-  .hero, .services, .contact, footer, .order-form { grid-template-columns: 1fr; }
+  .hero, .services, .contact, .work-grid, footer, .order-form { grid-template-columns: 1fr; }
   .hero-mark { min-height: 0; }
   .hero-mark img { width: min(58vw, 220px); }
   .contact { width: min(1080px, calc(100% - 8vw)); }
