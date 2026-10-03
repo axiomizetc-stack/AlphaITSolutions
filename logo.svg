@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" role="img" aria-label="AlphaIT Solutions">
-  <rect width="280" height="72" fill="none"/>
-  <circle cx="36" cy="36" r="32" fill="#3f4f32"/>
-  <text x="36" y="46" text-anchor="middle" fill="#ffffff" font-family="Outfit, Segoe UI, sans-serif" font-size="28" font-weight="700">A</text>
-  <text x="80" y="34" fill="#3f4f32" font-family="Outfit, Segoe UI, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.04em">AlphaIT</text>
-  <text x="82" y="54" fill="#3f4f32" font-family="Outfit, Segoe UI, sans-serif" font-size="11" font-weight="650" letter-spacing="0.28em">SOLUTIONS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="AlphaIT Solutions">
+  <circle cx="80" cy="80" r="78" fill="#3f4f32"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#e7efe0" stroke-width="1.2"/>
+  <text x="80" y="78" text-anchor="middle" fill="#ffffff" font-family="Outfit, Segoe UI, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.03em">AlphaIT</text>
+  <text x="80" y="100" text-anchor="middle" fill="#d7e2c8" font-family="Outfit, Segoe UI, sans-serif" font-size="11" font-weight="650" letter-spacing="0.32em">SOLUTIONS</text>
 </svg>

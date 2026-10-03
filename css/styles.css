@@ -59,7 +59,7 @@ p { margin: 0; }
   text-decoration: none;
   margin-right: auto;
 }
-.logo img { width: 188px; height: auto; display: block; }
+.logo img { width: 64px; height: 64px; display: block; }
 nav { display: flex; gap: 1.4rem; }
 nav a {
   text-decoration: none;
@@ -320,7 +320,7 @@ footer {
 @media (max-width: 860px) {
   .menu-toggle { display: inline-block; }
   .header-wa { display: none; }
-  .logo img { width: 156px; }
+  .logo img { width: 56px; height: 56px; }
   nav {
     display: none;
     position: absolute;
