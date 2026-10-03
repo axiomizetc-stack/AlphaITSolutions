@@ -66,7 +66,7 @@
         </p>
         <div class="actions">
           <a class="btn btn-solid" href="#kontakt" data-i18n="hero.primary">Get in touch</a>
-          <a class="btn btn-line" href="tel:+38761834552">061 834 552</a>
+          <a class="btn btn-line" href="https://wa.me/38761834552" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       </section>
 
@@ -102,22 +102,54 @@
       <section class="contact" id="kontakt">
         <div>
           <p class="eyebrow" data-i18n="contact.kicker">Contact</p>
-          <h2 data-i18n="contact.title">Write or call.</h2>
+          <h2 data-i18n="contact.title">Write on WhatsApp.</h2>
+          <p class="contact-lead" data-i18n="contact.text">The form opens WhatsApp with your message already written. You can also write or call.</p>
+          <ul>
+            <li>
+              <span data-i18n="contact.person">Person</span>
+              <strong>Izet Čopelj</strong>
+            </li>
+            <li>
+              <span>WhatsApp</span>
+              <a href="https://wa.me/38761834552" target="_blank" rel="noopener noreferrer">061 834 552</a>
+            </li>
+            <li>
+              <span data-i18n="contact.email">Email</span>
+              <a href="mailto:axiomizetc@gmail.com">axiomizetc@gmail.com</a>
+            </li>
+            <li>
+              <span data-i18n="contact.phone">Phone</span>
+              <a href="tel:+38761834552">061 834 552</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <span data-i18n="contact.person">Person</span>
-            <strong>Izet Čopelj</strong>
-          </li>
-          <li>
-            <span data-i18n="contact.email">Email</span>
-            <a href="mailto:axiomizetc@gmail.com">axiomizetc@gmail.com</a>
-          </li>
-          <li>
-            <span data-i18n="contact.phone">Phone</span>
-            <a href="tel:+38761834552">061 834 552</a>
-          </li>
-        </ul>
+        <form class="order-form" id="order-form" novalidate>
+          <label>
+            <span data-i18n="form.name">Name</span>
+            <input name="name" type="text" autocomplete="name" required data-i18n-placeholder="form.namePh" placeholder="Your name" />
+          </label>
+          <label>
+            <span data-i18n="form.phone">Phone</span>
+            <input name="phone" type="tel" autocomplete="tel" required data-i18n-placeholder="form.phonePh" placeholder="06x xxx xxx" />
+          </label>
+          <label class="full">
+            <span data-i18n="form.type">Service</span>
+            <select name="type">
+              <option value="website" data-i18n="form.typeWebsite">Website</option>
+              <option value="maintenance" data-i18n="form.typeMaintenance">Maintenance</option>
+              <option value="qa" data-i18n="form.typeQa">QA</option>
+              <option value="other" data-i18n="form.typeOther">Something else</option>
+            </select>
+          </label>
+          <label class="full">
+            <span data-i18n="form.message">Message</span>
+            <textarea name="message" rows="4" data-i18n-placeholder="form.messagePh" placeholder="What do you need?"></textarea>
+          </label>
+          <div class="full form-footer">
+            <button class="btn btn-solid" type="submit" data-i18n="form.submit">Send on WhatsApp</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </div>
+        </form>
       </section>
     </main>
 
@@ -125,6 +157,7 @@
       <span>Alpha IT Solutions</span>
       <span>Izet Čopelj</span>
     </footer>
+    <a class="wa-float" href="https://wa.me/38761834552" target="_blank" rel="noopener noreferrer" data-i18n-aria="float.aria" aria-label="WhatsApp">WhatsApp</a>
     <script src="js/main.js"></script>
   </body>
 </html>

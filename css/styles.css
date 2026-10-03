@@ -177,7 +177,7 @@ h1 { font-size: clamp(3.2rem, 8vw, 6.4rem); max-width: 11ch; }
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 2rem;
   background: var(--olive);
   color: white;
@@ -188,7 +188,8 @@ h1 { font-size: clamp(3.2rem, 8vw, 6.4rem); max-width: 11ch; }
 }
 .contact .eyebrow { color: #d7e2c8; }
 .contact h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); }
-.contact ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; align-content: end; }
+.contact-lead { margin-top: 0.8rem; color: rgba(255, 255, 255, 0.78); max-width: 28rem; }
+.contact ul { list-style: none; margin: 1.4rem 0 0; padding: 0; display: grid; gap: 1rem; }
 .contact span {
   display: block;
   font-size: 0.75rem;
@@ -197,6 +198,46 @@ h1 { font-size: clamp(3.2rem, 8vw, 6.4rem); max-width: 11ch; }
   color: rgba(255, 255, 255, 0.7);
 }
 .contact a, .contact strong { font-size: 1.2rem; }
+.order-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  background: white;
+  color: var(--ink);
+  border-radius: 1.2rem;
+  padding: 1rem;
+  align-content: start;
+}
+.order-form label { display: grid; gap: 0.3rem; font-size: 0.82rem; font-weight: 650; }
+.order-form .full { grid-column: 1 / -1; }
+input, select, textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--mist);
+  border-radius: 0.8rem;
+  padding: 0.75rem 0.8rem;
+  font: inherit;
+  color: var(--ink);
+}
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--olive);
+  border-color: transparent;
+}
+.form-footer { display: flex; flex-wrap: wrap; gap: 0.7rem; align-items: center; }
+.form-status { margin: 0; color: var(--olive); font-weight: 650; }
+.form-status.is-error { color: #8b2e2e; }
+.wa-float {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 15;
+  background: #1f7a43;
+  color: white;
+  text-decoration: none;
+  font-weight: 650;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+}
 
 footer {
   display: flex;
@@ -224,7 +265,7 @@ footer {
     border-bottom: 1px solid var(--line);
   }
   nav.is-open { display: flex; }
-  .services article, .contact, footer { grid-template-columns: 1fr; display: grid; }
+  .services article, .contact, footer, .order-form { grid-template-columns: 1fr; display: grid; }
   .contact { width: min(1080px, calc(100% - 8vw)); }
   h1 { max-width: none; }
 }

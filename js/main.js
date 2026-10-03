@@ -19,10 +19,34 @@ const translations = {
     "services.3.text": "I test flows, forms, and layout. Bugs are reported clearly, before they reach users.",
     note: "You say what you need. I say what I can do, how long it takes, and when it is finished. No middleman.",
     "contact.kicker": "Contact",
-    "contact.title": "Write or call.",
+    "contact.title": "Write on WhatsApp.",
+    "contact.text": "The form opens WhatsApp with your message already written. You can also write or call.",
     "contact.person": "Person",
     "contact.email": "Email",
     "contact.phone": "Phone",
+    "form.name": "Name",
+    "form.phone": "Phone",
+    "form.type": "Service",
+    "form.message": "Message",
+    "form.submit": "Send on WhatsApp",
+    "form.namePh": "Your name",
+    "form.phonePh": "06x xxx xxx",
+    "form.messagePh": "What do you need?",
+    "form.typeWebsite": "Website",
+    "form.typeMaintenance": "Maintenance",
+    "form.typeQa": "QA",
+    "form.typeOther": "Something else",
+    "form.needName": "Please enter your name.",
+    "form.needPhone": "Please enter a phone number.",
+    "form.opening": "Opening WhatsApp with your message.",
+    "form.hello": "Hello Izet, I would like to talk about a project.",
+    "form.labels": {
+      name: "Name",
+      phone: "Phone",
+      type: "Service",
+      message: "Message",
+    },
+    "float.aria": "Message on WhatsApp",
   },
   bs: {
     "meta.title": "Alpha IT Solutions | Web stranice, održavanje i QA",
@@ -44,10 +68,34 @@ const translations = {
     "services.3.text": "Testiram tokove, forme i prikaz. Greške prijavim jasno, prije nego što odu korisnicima.",
     note: "Kažete šta treba. Ja kažem šta mogu, koliko traje i kad je gotovo. Bez posrednika.",
     "contact.kicker": "Kontakt",
-    "contact.title": "Pišite ili nazovite.",
+    "contact.title": "Pišite na WhatsApp.",
+    "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom. Možete i odmah pisati ili nazvati.",
     "contact.person": "Osoba",
     "contact.email": "E-pošta",
     "contact.phone": "Telefon",
+    "form.name": "Ime",
+    "form.phone": "Telefon",
+    "form.type": "Usluga",
+    "form.message": "Poruka",
+    "form.submit": "Pošalji na WhatsApp",
+    "form.namePh": "Vaše ime",
+    "form.phonePh": "06x xxx xxx",
+    "form.messagePh": "Šta vam treba?",
+    "form.typeWebsite": "Web stranica",
+    "form.typeMaintenance": "Održavanje",
+    "form.typeQa": "QA",
+    "form.typeOther": "Nešto drugo",
+    "form.needName": "Upišite ime.",
+    "form.needPhone": "Upišite broj telefona.",
+    "form.opening": "Otvaramo WhatsApp s vašom porukom.",
+    "form.hello": "Pozdrav Izet, javljam se za projekat.",
+    "form.labels": {
+      name: "Ime",
+      phone: "Telefon",
+      type: "Usluga",
+      message: "Poruka",
+    },
+    "float.aria": "Pišite na WhatsApp",
   },
 };
 
@@ -63,6 +111,11 @@ function applyLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = pack[node.dataset.i18n];
     if (typeof value === "string") node.textContent = value;
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
+    const value = pack[node.dataset.i18nPlaceholder];
+    if (typeof value === "string") node.placeholder = value;
   });
 
   document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
@@ -104,3 +157,38 @@ try {
   saved = "en";
 }
 applyLanguage(saved);
+
+const form = document.querySelector("#order-form");
+const statusEl = document.querySelector("#form-status");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const lang = document.documentElement.lang === "bs" ? "bs" : "en";
+  const pack = translations[lang];
+  const data = Object.fromEntries(new FormData(form));
+  statusEl.classList.remove("is-error");
+
+  if (!data.name.trim()) {
+    statusEl.textContent = pack["form.needName"];
+    statusEl.classList.add("is-error");
+    return;
+  }
+  if (!data.phone.trim()) {
+    statusEl.textContent = pack["form.needPhone"];
+    statusEl.classList.add("is-error");
+    return;
+  }
+
+  const typeLabel = form.querySelector(`[name="type"] option[value="${data.type}"]`)?.textContent || data.type;
+  const labels = pack["form.labels"];
+  const lines = [
+    pack["form.hello"],
+    `${labels.name}: ${data.name.trim()}`,
+    `${labels.phone}: ${data.phone.trim()}`,
+    `${labels.type}: ${typeLabel}`,
+    data.message.trim() ? `${labels.message}: ${data.message.trim()}` : "",
+  ].filter(Boolean);
+
+  statusEl.textContent = pack["form.opening"];
+  window.open(`https://wa.me/38761834552?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener,noreferrer");
+});
