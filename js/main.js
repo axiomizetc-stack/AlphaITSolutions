@@ -5,6 +5,7 @@ const translations = {
       "Alpha IT Solutions, the business of Izet Čopelj. Websites, maintenance, and QA. axiomizetc@gmail.com · 061 834 552.",
     skip: "Skip to content",
     "nav.menu": "Menu",
+    "nav.about": "About",
     "nav.services": "Services",
     "nav.contact": "Contact",
     "hero.eyebrow": "Sole proprietorship · Izet Čopelj",
@@ -17,7 +18,12 @@ const translations = {
     "services.2.title": "Maintenance",
     "services.2.text": "Changes, fixes, and care so the site stays online after the work is done.",
     "services.3.text": "I test flows, forms, and layout. Bugs are reported clearly, before they reach users.",
-    note: "You say what you need. I say what I can do, how long it takes, and when it is finished. No middleman.",
+    "about.kicker": "The team",
+    "about.title": "Izet Čopelj leads the work.",
+    "about.text":
+      "He has been in IT since 2015, as a software engineer and as a QA engineer. That mix of building and testing is the whole shop. You talk to him, not a desk in between.",
+    "about.offer":
+      "We offer QA automation, new websites, mobile-ready pages, maintenance, and other IT ideas when a job does not fit a neat box.",
     "contact.kicker": "Contact",
     "contact.title": "Write on WhatsApp.",
     "contact.text": "The form opens WhatsApp with your message already written. You can also write or call.",
@@ -54,6 +60,7 @@ const translations = {
       "Alpha IT Solutions, obrt Izeta Čopelja. Web stranice, održavanje i QA. axiomizetc@gmail.com · 061 834 552.",
     skip: "Preskoči na sadržaj",
     "nav.menu": "Meni",
+    "nav.about": "O nama",
     "nav.services": "Usluge",
     "nav.contact": "Kontakt",
     "hero.eyebrow": "Obrt · Izet Čopelj",
@@ -66,7 +73,12 @@ const translations = {
     "services.2.title": "Održavanje",
     "services.2.text": "Izmjene, popravke i briga da stranica ostane online kad je posao već gotov.",
     "services.3.text": "Testiram tokove, forme i prikaz. Greške prijavim jasno, prije nego što odu korisnicima.",
-    note: "Kažete šta treba. Ja kažem šta mogu, koliko traje i kad je gotovo. Bez posrednika.",
+    "about.kicker": "Tim",
+    "about.title": "Posao vodi Izet Čopelj.",
+    "about.text":
+      "U IT-u je od 2015. godine, i kao software engineer i kao QA engineer. Ta mješavina pisanja i testiranja je cijela radnja. Razgovarate s njim, ne preko šaltera.",
+    "about.offer":
+      "Nudimo QA automatizaciju, nove web stranice, stranice spremne za telefon, održavanje i druge IT ideje kad posao ne stane u jednu kutiju.",
     "contact.kicker": "Kontakt",
     "contact.title": "Pišite na WhatsApp.",
     "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom. Možete i odmah pisati ili nazvati.",

@@ -175,7 +175,7 @@ nav a:hover { color: var(--ink); }
   background: var(--ink);
 }
 
-.hero, .services, .note, footer {
+.hero, .services, .about, footer {
   width: min(1080px, calc(100% - 12vw));
   margin-inline: auto;
 }
@@ -272,8 +272,8 @@ h1 { font-size: clamp(3.1rem, 8vw, 6.1rem); max-width: 12ch; }
 .services h2 { font-size: 1.7rem; }
 .services p { color: var(--muted); margin-top: 0.4rem; }
 
-.note { padding: 5rem 0; position: relative; }
-.note::before {
+.about { padding: 5rem 0; position: relative; max-width: 40rem; }
+.about::before {
   content: "";
   position: absolute;
   left: -1.2rem;
@@ -283,15 +283,11 @@ h1 { font-size: clamp(3.1rem, 8vw, 6.1rem); max-width: 12ch; }
   border-radius: 99px;
   background: var(--olive);
 }
-.note p {
-  font-family: var(--serif);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  line-height: 1.18;
-  max-width: 16em;
-}
-.note strong {
+.about h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.about p { color: var(--muted); margin-top: 0.9rem; max-width: 38rem; }
+.about strong {
   display: block;
-  margin-top: 1.1rem;
+  margin-top: 1.2rem;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -428,7 +424,7 @@ footer {
   h1 { max-width: none; }
   .wash-a, .wash-b { width: 70vw; height: 70vw; }
   .ring-a, .ring-b { display: none; }
-  .note::before { left: 0; }
+  .about::before { left: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
