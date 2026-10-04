@@ -1,8 +1,8 @@
 const translations = {
   en: {
-    "meta.title": "Alpha IT Solutions | Websites, maintenance, and QA",
+    "meta.title": "Alpha IT Solutions | Izet Čopelj — websites, maintenance, QA",
     "meta.description":
-      "Alpha IT Solutions, the business of Izet Čopelj. Websites, maintenance, and QA. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, the business of Izet Čopelj in Mostar. Websites, maintenance, and QA automation. axiomizetc@gmail.com · 061 834 552.",
     skip: "Skip to content",
     "nav.menu": "Menu",
     "nav.about": "About",
@@ -76,9 +76,9 @@ const translations = {
     "built.by": "Built by Alpha IT Solutions",
   },
   bs: {
-    "meta.title": "Alpha IT Solutions | Web stranice, održavanje i QA",
+    "meta.title": "Alpha IT Solutions | Izet Čopelj — web stranice, održavanje i QA",
     "meta.description":
-      "Alpha IT Solutions, obrt Izeta Čopelja. Web stranice, održavanje i QA. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, obrt Izeta Čopelja iz Mostara. Web stranice, održavanje i QA automatizacija. axiomizetc@gmail.com · 061 834 552.",
     skip: "Preskoči na sadržaj",
     "nav.menu": "Meni",
     "nav.about": "O nama",
@@ -152,9 +152,9 @@ const translations = {
     "built.by": "Napravio Alpha IT Solutions",
   },
   hr: {
-    "meta.title": "Alpha IT Solutions | Web stranice, održavanje i QA",
+    "meta.title": "Alpha IT Solutions | Izet Čopelj — web stranice, održavanje i QA",
     "meta.description":
-      "Alpha IT Solutions, obrt Izeta Čopelja. Web stranice, održavanje i QA. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, obrt Izeta Čopelja iz Mostara. Web stranice, održavanje i QA automatizacija. axiomizetc@gmail.com · 061 834 552.",
     skip: "Preskoči na sadržaj",
     "nav.menu": "Izbornik",
     "nav.about": "O nama",
@@ -228,9 +228,9 @@ const translations = {
     "built.by": "Izradio Alpha IT Solutions",
   },
   sr: {
-    "meta.title": "Alpha IT Solutions | Веб странице, одржавање и QA",
+    "meta.title": "Alpha IT Solutions | Izet Čopelj — веб странице, одржавање и QA",
     "meta.description":
-      "Alpha IT Solutions, обрт Izeta Čopelja. Веб странице, одржавање и QA. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, обрт Izeta Čopelja из Мостара. Веб странице, одржавање и QA аутоматизација. axiomizetc@gmail.com · 061 834 552.",
     skip: "Прескочи на садржај",
     "nav.menu": "Мени",
     "nav.about": "О нама",
@@ -304,9 +304,9 @@ const translations = {
     "built.by": "Направио Alpha IT Solutions",
   },
   de: {
-    "meta.title": "Alpha IT Solutions | Webseiten, Wartung und QA",
+    "meta.title": "Alpha IT Solutions | Izet Čopelj — Webseiten, Wartung und QA",
     "meta.description":
-      "Alpha IT Solutions, das Gewerbe von Izet Čopelj. Webseiten, Wartung und QA. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, das Gewerbe von Izet Čopelj in Mostar. Webseiten, Wartung und QA-Automatisierung. axiomizetc@gmail.com · 061 834 552.",
     skip: "Zum Inhalt springen",
     "nav.menu": "Menü",
     "nav.about": "Über uns",
@@ -380,9 +380,9 @@ const translations = {
     "built.by": "Erstellt von Alpha IT Solutions",
   },
   ru: {
-    "meta.title": "Alpha IT Solutions | Сайты, поддержка и QA",
+    "meta.title": "Alpha IT Solutions | Izet Čopelj — сайты, поддержка и QA",
     "meta.description":
-      "Alpha IT Solutions, дело Izet Čopelj. Сайты, поддержка и QA. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, дело Izet Čopelj в Мостаре. Сайты, поддержка и QA-автоматизация. axiomizetc@gmail.com · 061 834 552.",
     skip: "Перейти к содержанию",
     "nav.menu": "Меню",
     "nav.about": "О нас",
@@ -474,6 +474,10 @@ function applyLanguage(lang) {
   document.documentElement.dataset.lang = chosen;
   document.title = pack["meta.title"];
   document.querySelector('meta[name="description"]').setAttribute("content", pack["meta.description"]);
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogTitle) ogTitle.setAttribute("content", pack["meta.title"]);
+  if (ogDesc) ogDesc.setAttribute("content", pack["meta.description"]);
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = pack[node.dataset.i18n];

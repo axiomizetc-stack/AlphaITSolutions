@@ -3,11 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alpha IT Solutions | Websites, maintenance, and QA</title>
+    <title>Alpha IT Solutions | Izet Čopelj — websites, maintenance, QA</title>
     <meta
       name="description"
-      content="Alpha IT Solutions, the business of Izet Čopelj. Websites, maintenance, and QA. axiomizetc@gmail.com · 061 834 552."
+      content="Alpha IT Solutions, the business of Izet Čopelj in Mostar. Websites, maintenance, and QA automation. axiomizetc@gmail.com · 061 834 552."
     />
+    <link rel="canonical" href="https://alphait-solutions.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Alpha IT Solutions" />
+    <meta property="og:title" content="Alpha IT Solutions | Izet Čopelj — websites, maintenance, QA" />
+    <meta
+      property="og:description"
+      content="Izet Čopelj builds websites, keeps them after launch, and covers QA automation. Mostar. 061 834 552."
+    />
+    <meta property="og:url" content="https://alphait-solutions.com/" />
+    <meta property="og:image" content="https://alphait-solutions.com/images/izet-copelj.png" />
+    <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#3f4f32" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,28 +32,58 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Alpha IT Solutions",
-        "description": "Websites, maintenance, and QA.",
-        "email": "axiomizetc@gmail.com",
-        "telephone": "+38761834552",
-        "founder": {
-          "@type": "Person",
-          "name": "Izet Čopelj"
-        },
-        "employee": [
+        "@graph": [
           {
-            "@type": "Person",
-            "name": "Izet Čopelj",
-            "jobTitle": "Founder, Software engineer, QA automation"
+            "@type": "ProfessionalService",
+            "@id": "https://alphait-solutions.com/#business",
+            "name": "Alpha IT Solutions",
+            "alternateName": ["AlphaIT Solutions", "Alpha IT"],
+            "url": "https://alphait-solutions.com/",
+            "description": "Websites, maintenance, and QA automation by Izet Čopelj.",
+            "email": "axiomizetc@gmail.com",
+            "telephone": "+38761834552",
+            "image": "https://alphait-solutions.com/images/izet-copelj.png",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Mostar",
+              "addressCountry": "BA"
+            },
+            "areaServed": "Bosnia and Herzegovina",
+            "founder": { "@id": "https://alphait-solutions.com/#izet" },
+            "employee": [
+              { "@id": "https://alphait-solutions.com/#izet" },
+              { "@id": "https://alphait-solutions.com/#haris" }
+            ]
           },
           {
             "@type": "Person",
+            "@id": "https://alphait-solutions.com/#izet",
+            "name": "Izet Čopelj",
+            "alternateName": "Izet Copelj",
+            "jobTitle": "Founder, Software engineer, QA automation",
+            "worksFor": { "@id": "https://alphait-solutions.com/#business" },
+            "url": "https://alphait-solutions.com/#tim",
+            "image": "https://alphait-solutions.com/images/izet-copelj.png",
+            "email": "axiomizetc@gmail.com",
+            "telephone": "+38761834552",
+            "sameAs": ["https://github.com/axiomizetc-stack"]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://alphait-solutions.com/#haris",
             "name": "Haris Balavac",
-            "jobTitle": "QA"
+            "jobTitle": "QA",
+            "worksFor": { "@id": "https://alphait-solutions.com/#business" },
+            "image": "https://alphait-solutions.com/images/haris-balavac.jpg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://alphait-solutions.com/#website",
+            "url": "https://alphait-solutions.com/",
+            "name": "Alpha IT Solutions",
+            "inLanguage": ["en", "bs", "hr", "sr", "de", "ru"]
           }
-        ],
-        "areaServed": "Bosnia and Herzegovina"
+        ]
       }
     </script>
   </head>
