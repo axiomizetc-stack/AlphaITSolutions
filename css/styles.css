@@ -122,22 +122,26 @@ nav a {
 nav a:hover { color: var(--ink); }
 .header-end { display: flex; align-items: center; gap: 0.7rem; }
 .lang {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 5.6rem;
-  padding: 0.18rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: auto;
+  max-width: 14.6rem;
+  gap: 0.12rem;
+  padding: 0.16rem;
   background: var(--mist);
-  border-radius: 999px;
+  border-radius: 1rem;
 }
 .lang button {
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 650;
-  letter-spacing: 0.04em;
-  padding: 0.42rem 0;
+  letter-spacing: 0.03em;
+  min-width: 2.15rem;
+  padding: 0.36rem 0.28rem;
   cursor: pointer;
 }
 .lang button[aria-pressed="true"] {

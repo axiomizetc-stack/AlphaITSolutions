@@ -149,14 +149,323 @@ const translations = {
     },
     "float.aria": "Pišite na WhatsApp",
   },
+  hr: {
+    "meta.title": "Alpha IT Solutions | Web stranice, održavanje i QA",
+    "meta.description":
+      "Alpha IT Solutions, obrt Izeta Čopelja. Web stranice, održavanje i QA. axiomizetc@gmail.com · 061 834 552.",
+    skip: "Preskoči na sadržaj",
+    "nav.menu": "Izbornik",
+    "nav.about": "O nama",
+    "nav.team": "Tim",
+    "nav.services": "Usluge",
+    "nav.work": "Radovi",
+    "nav.contact": "Kontakt",
+    "hero.eyebrow": "Obrt · Izet Čopelj",
+    "hero.title": "Web stranice, održavanje i QA.",
+    "hero.lead":
+      "Alpha IT Solutions izrađuje stranice, drži ih urednima nakon objave i provjerava da rade prije nego što ih netko vidi. Razgovarate izravno sa mnom.",
+    "hero.primary": "Javite se",
+    "services.1.title": "Web stranice",
+    "services.1.text": "Nova stranica od dogovora do objave. Jednostavna, jasna i uredna na telefonu.",
+    "services.2.title": "Održavanje",
+    "services.2.text": "Izmjene, popravci i briga da stranica ostane online kad je posao već gotov.",
+    "services.3.text": "Testiram tokove, obrasce i prikaz. Pogreške prijavim jasno, prije nego što odu korisnicima.",
+    "about.kicker": "O nama",
+    "about.title": "Posao vodi Izet Čopelj.",
+    "about.text":
+      "U IT-u je od 2015. godine, i kao software engineer i kao QA engineer. Ta mješavina pisanja i testiranja je radnja, uz posvećeni QA pored njega. Razgovarate s njim, ne preko šaltera.",
+    "about.offer":
+      "Nudimo QA automatizaciju, nove web stranice, stranice spremne za telefon, održavanje i druge IT ideje kad posao ne stane u jednu kutiju.",
+    "team.kicker": "Naš tim",
+    "team.title": "Ljudi na poslu.",
+    "team.izet.role": "Osnivač · Software engineer · QA automation",
+    "team.izet.text": "U IT-u od 2015. Izrađuje stranice, drži ih nakon objave i radi QA automatizaciju. Razgovarate izravno s njim.",
+    "team.izet.note": "Objavi jednostavniju verziju, pa je testira kao da je nije pisao.",
+    "team.haris.role": "Posvećeni QA",
+    "team.haris.text": "Sedam godina u struci. Testira tokove, obrasce i prikaz prije nego što išta ode korisnicima.",
+    "team.haris.note": "Nađe grešku za koju ste se zakleli da je nema.",
+    "work.kicker": "Odabrani radovi",
+    "work.title": "Stranice koje smo napravili u Mostaru.",
+    "work.gurman": "Stranica za catering i lunch box. Već je online.",
+    "work.gurmanLink": "Otvori Gurman Mostar",
+    "work.canadiana": "Web stranica za restoran Canadiana u Mostaru. Već je online.",
+    "work.canadianaLink": "Otvori Canadiana Mostar",
+    "work.gradnja": "Web stranica za Gradnja d.o.o. Mostar. Već je online.",
+    "work.gradnjaLink": "Otvori Gradnja Mostar",
+    "work.korijenje": "Web stranica za knjigu Naše korijenje. Već je online.",
+    "work.korijenjeLink": "Otvori Naše korijenje",
+    "contact.kicker": "Kontakt",
+    "contact.title": "Pišite na WhatsApp.",
+    "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom. Možete i odmah pisati ili nazvati.",
+    "contact.person": "Osoba",
+    "contact.email": "E-pošta",
+    "contact.phone": "Telefon",
+    "form.name": "Ime",
+    "form.phone": "Telefon",
+    "form.type": "Usluga",
+    "form.message": "Poruka",
+    "form.submit": "Pošalji na WhatsApp",
+    "form.namePh": "Vaše ime",
+    "form.phonePh": "06x xxx xxx",
+    "form.messagePh": "Što vam treba?",
+    "form.typeWebsite": "Web stranica",
+    "form.typeMaintenance": "Održavanje",
+    "form.typeQa": "QA",
+    "form.typeOther": "Nešto drugo",
+    "form.needName": "Upišite ime.",
+    "form.needPhone": "Upišite broj telefona.",
+    "form.opening": "Otvaramo WhatsApp s vašom porukom.",
+    "form.hello": "Pozdrav Izet, javljam se za projekt.",
+    "form.labels": {
+      name: "Ime",
+      phone: "Telefon",
+      type: "Usluga",
+      message: "Poruka",
+    },
+    "float.aria": "Pišite na WhatsApp",
+  },
+  sr: {
+    "meta.title": "Alpha IT Solutions | Веб странице, одржавање и QA",
+    "meta.description":
+      "Alpha IT Solutions, обрт Izeta Čopelja. Веб странице, одржавање и QA. axiomizetc@gmail.com · 061 834 552.",
+    skip: "Прескочи на садржај",
+    "nav.menu": "Мени",
+    "nav.about": "О нама",
+    "nav.team": "Тим",
+    "nav.services": "Услуге",
+    "nav.work": "Радови",
+    "nav.contact": "Контакт",
+    "hero.eyebrow": "Обрт · Izet Čopelj",
+    "hero.title": "Веб странице, одржавање и QA.",
+    "hero.lead":
+      "Alpha IT Solutions прави странице, држи их уредним након објаве и провјерава да раде прије него што их неко види. Разговарате директно са мном.",
+    "hero.primary": "Јавите се",
+    "services.1.title": "Веб странице",
+    "services.1.text": "Нова страница од договора до објаве. Једноставна, јасна и уредна на телефону.",
+    "services.2.title": "Одржавање",
+    "services.2.text": "Измјене, поправке и брига да страница остане online кад је посао већ готов.",
+    "services.3.text": "Тестирам токове, форме и приказ. Грешке пријавим јасно, прије него што оду корисницима.",
+    "about.kicker": "О нама",
+    "about.title": "Посао води Izet Čopelj.",
+    "about.text":
+      "У IT-у је од 2015. године, и као software engineer и као QA engineer. Та мјешавина писања и тестирања је радња, уз посвећени QA поред њега. Разговарате с њим, не преко шалтера.",
+    "about.offer":
+      "Нудимо QA аутоматизацију, нове веб странице, странице спремне за телефон, одржавање и друге IT идеје кад посао не стане у једну кутију.",
+    "team.kicker": "Наш тим",
+    "team.title": "Људи на послу.",
+    "team.izet.role": "Оснивач · Software engineer · QA automation",
+    "team.izet.text": "У IT-у од 2015. Прави странице, држи их након објаве и ради QA аутоматизацију. Разговарате директно с њим.",
+    "team.izet.note": "Објави једноставнију верзију, па је тестира као да је није писао.",
+    "team.haris.role": "Посвећени QA",
+    "team.haris.text": "Седам година у струци. Тестира токове, форме и приказ прије него што ишта оде корисницима.",
+    "team.haris.note": "Нађе грешку за коју сте се заклели да је нема.",
+    "work.kicker": "Одабрани радови",
+    "work.title": "Странице које смо направили у Мостару.",
+    "work.gurman": "Страница за кетеринг и lunch box. Већ је online.",
+    "work.gurmanLink": "Отвори Gurman Mostar",
+    "work.canadiana": "Веб страница за ресторан Canadiana у Мостару. Већ је online.",
+    "work.canadianaLink": "Отвори Canadiana Mostar",
+    "work.gradnja": "Веб страница за Gradnja d.o.o. Mostar. Већ је online.",
+    "work.gradnjaLink": "Отвори Gradnja Mostar",
+    "work.korijenje": "Веб страница за књигу Наше коријење. Већ је online.",
+    "work.korijenjeLink": "Отвори Наше коријење",
+    "contact.kicker": "Контакт",
+    "contact.title": "Пишите на WhatsApp.",
+    "contact.text": "Образац отвара WhatsApp с већ написаном поруком. Можете и одмах писати или назвати.",
+    "contact.person": "Особа",
+    "contact.email": "Е-пошта",
+    "contact.phone": "Телефон",
+    "form.name": "Име",
+    "form.phone": "Телефон",
+    "form.type": "Услуга",
+    "form.message": "Порука",
+    "form.submit": "Пошаљи на WhatsApp",
+    "form.namePh": "Ваше име",
+    "form.phonePh": "06x xxx xxx",
+    "form.messagePh": "Шта вам треба?",
+    "form.typeWebsite": "Веб страница",
+    "form.typeMaintenance": "Одржавање",
+    "form.typeQa": "QA",
+    "form.typeOther": "Нешто друго",
+    "form.needName": "Упишите име.",
+    "form.needPhone": "Упишите број телефона.",
+    "form.opening": "Отварамо WhatsApp с вашом поруком.",
+    "form.hello": "Поздрав Izet, јављам се за пројекат.",
+    "form.labels": {
+      name: "Име",
+      phone: "Телефон",
+      type: "Услуга",
+      message: "Порука",
+    },
+    "float.aria": "Пишите на WhatsApp",
+  },
+  de: {
+    "meta.title": "Alpha IT Solutions | Webseiten, Wartung und QA",
+    "meta.description":
+      "Alpha IT Solutions, das Gewerbe von Izet Čopelj. Webseiten, Wartung und QA. axiomizetc@gmail.com · 061 834 552.",
+    skip: "Zum Inhalt springen",
+    "nav.menu": "Menü",
+    "nav.about": "Über uns",
+    "nav.team": "Team",
+    "nav.services": "Leistungen",
+    "nav.work": "Arbeiten",
+    "nav.contact": "Kontakt",
+    "hero.eyebrow": "Einzelunternehmen · Izet Čopelj",
+    "hero.title": "Webseiten, Wartung und QA.",
+    "hero.lead":
+      "Alpha IT Solutions baut Seiten, hält sie nach dem Launch in Ordnung und prüft, dass sie funktionieren, bevor sie jemand anderes sieht. Sie sprechen direkt mit mir.",
+    "hero.primary": "Schreiben Sie uns",
+    "services.1.title": "Webseiten",
+    "services.1.text": "Eine neue Seite vom Briefing bis zum Launch. Einfach, klar und sauber auf dem Handy.",
+    "services.2.title": "Wartung",
+    "services.2.text": "Änderungen, Fixes und Pflege, damit die Seite online bleibt, wenn die Arbeit schon fertig ist.",
+    "services.3.text": "Ich prüfe Abläufe, Formulare und das Layout. Fehler werden klar gemeldet, bevor Nutzer sie sehen.",
+    "about.kicker": "Über uns",
+    "about.title": "Izet Čopelj führt die Arbeit.",
+    "about.text":
+      "Er ist seit 2015 in der IT, als Software Engineer und als QA Engineer. Bauen und Testen sind der Laden, mit dediziertem QA neben ihm. Sie sprechen mit ihm, nicht mit einem Schalter dazwischen.",
+    "about.offer":
+      "Wir bieten QA-Automatisierung, neue Webseiten, mobiltaugliche Seiten, Wartung und andere IT-Ideen, wenn ein Auftrag nicht in eine Schublade passt.",
+    "team.kicker": "Unser Team",
+    "team.title": "Die Leute an der Arbeit.",
+    "team.izet.role": "Gründer · Software engineer · QA automation",
+    "team.izet.text": "Seit 2015 in der IT. Er baut die Seiten, hält sie nach dem Launch und macht QA-Automatisierung. Sie sprechen direkt mit ihm.",
+    "team.izet.note": "Er liefert die einfache Version und testet sie, als hätte er sie nicht geschrieben.",
+    "team.haris.role": "Dediziertes QA",
+    "team.haris.text": "Sieben Jahre im Fach. Er testet Abläufe, Formulare und Layout, bevor etwas zu Nutzern geht.",
+    "team.haris.note": "Er findet den Fehler, von dem Sie geschworen haben, er sei nicht da.",
+    "work.kicker": "Ausgewählte Arbeiten",
+    "work.title": "Seiten, die wir in Mostar gebaut haben.",
+    "work.gurman": "Seite für Catering und Lunchbox. Schon online.",
+    "work.gurmanLink": "Gurman Mostar öffnen",
+    "work.canadiana": "Webseite für das Restaurant Canadiana in Mostar. Schon online.",
+    "work.canadianaLink": "Canadiana Mostar öffnen",
+    "work.gradnja": "Webseite für Gradnja d.o.o. Mostar. Schon online.",
+    "work.gradnjaLink": "Gradnja Mostar öffnen",
+    "work.korijenje": "Webseite für das Buch Naše korijenje. Schon online.",
+    "work.korijenjeLink": "Naše korijenje öffnen",
+    "contact.kicker": "Kontakt",
+    "contact.title": "Schreiben Sie auf WhatsApp.",
+    "contact.text": "Das Formular öffnet WhatsApp mit Ihrer Nachricht schon geschrieben. Sie können auch gleich schreiben oder anrufen.",
+    "contact.person": "Person",
+    "contact.email": "E-Mail",
+    "contact.phone": "Telefon",
+    "form.name": "Name",
+    "form.phone": "Telefon",
+    "form.type": "Leistung",
+    "form.message": "Nachricht",
+    "form.submit": "Auf WhatsApp senden",
+    "form.namePh": "Ihr Name",
+    "form.phonePh": "06x xxx xxx",
+    "form.messagePh": "Was brauchen Sie?",
+    "form.typeWebsite": "Webseite",
+    "form.typeMaintenance": "Wartung",
+    "form.typeQa": "QA",
+    "form.typeOther": "Etwas anderes",
+    "form.needName": "Bitte geben Sie Ihren Namen ein.",
+    "form.needPhone": "Bitte geben Sie eine Telefonnummer ein.",
+    "form.opening": "WhatsApp öffnet sich mit Ihrer Nachricht.",
+    "form.hello": "Hallo Izet, ich möchte über ein Projekt sprechen.",
+    "form.labels": {
+      name: "Name",
+      phone: "Telefon",
+      type: "Leistung",
+      message: "Nachricht",
+    },
+    "float.aria": "Auf WhatsApp schreiben",
+  },
+  ru: {
+    "meta.title": "Alpha IT Solutions | Сайты, поддержка и QA",
+    "meta.description":
+      "Alpha IT Solutions, дело Izet Čopelj. Сайты, поддержка и QA. axiomizetc@gmail.com · 061 834 552.",
+    skip: "Перейти к содержанию",
+    "nav.menu": "Меню",
+    "nav.about": "О нас",
+    "nav.team": "Команда",
+    "nav.services": "Услуги",
+    "nav.work": "Работы",
+    "nav.contact": "Контакт",
+    "hero.eyebrow": "Частное предприятие · Izet Čopelj",
+    "hero.title": "Сайты, поддержка и QA.",
+    "hero.lead":
+      "Alpha IT Solutions делает сайты, держит их в порядке после запуска и проверяет, что они работают, прежде чем их увидит кто-то ещё. Вы говорите напрямую со мной.",
+    "hero.primary": "Написать",
+    "services.1.title": "Сайты",
+    "services.1.text": "Новый сайт от брифа до запуска. Простой, ясный и аккуратный на телефоне.",
+    "services.2.title": "Поддержка",
+    "services.2.text": "Правки, ремонт и уход, чтобы сайт оставался онлайн, когда работа уже сделана.",
+    "services.3.text": "Я проверяю сценарии, формы и вёрстку. Ошибки пишу ясно, до того как их увидят пользователи.",
+    "about.kicker": "О нас",
+    "about.title": "Работу ведёт Izet Čopelj.",
+    "about.text":
+      "В IT с 2015 года, и как software engineer, и как QA engineer. Сборка и тесты — это вся мастерская, рядом выделенный QA. Вы говорите с ним, не через стойку.",
+    "about.offer":
+      "Мы делаем QA-автоматизацию, новые сайты, страницы под телефон, поддержку и другие IT-задачи, если работа не лезет в одну коробку.",
+    "team.kicker": "Наша команда",
+    "team.title": "Люди на работе.",
+    "team.izet.role": "Основатель · Software engineer · QA automation",
+    "team.izet.text": "В IT с 2015. Делает сайты, ведёт их после запуска и занимается QA-автоматизацией. Вы говорите с ним напрямую.",
+    "team.izet.note": "Выпускает простую версию и тестирует её так, будто не он её писал.",
+    "team.haris.role": "Выделенный QA",
+    "team.haris.text": "Семь лет в деле. Проверяет сценарии, формы и вёрстку, прежде чем что-то увидят пользователи.",
+    "team.haris.note": "Находит ошибку, в отсутствие которой вы клялись.",
+    "work.kicker": "Избранные работы",
+    "work.title": "Сайты, которые мы сделали в Мостаре.",
+    "work.gurman": "Сайт для кейтеринга и lunch box. Уже онлайн.",
+    "work.gurmanLink": "Открыть Gurman Mostar",
+    "work.canadiana": "Сайт ресторана Canadiana в Мостаре. Уже онлайн.",
+    "work.canadianaLink": "Открыть Canadiana Mostar",
+    "work.gradnja": "Сайт для Gradnja d.o.o. Mostar. Уже онлайн.",
+    "work.gradnjaLink": "Открыть Gradnja Mostar",
+    "work.korijenje": "Сайт книги Naše korijenje. Уже онлайн.",
+    "work.korijenjeLink": "Открыть Naše korijenje",
+    "contact.kicker": "Контакт",
+    "contact.title": "Напишите в WhatsApp.",
+    "contact.text": "Форма открывает WhatsApp с уже написанным сообщением. Можно сразу писать или звонить.",
+    "contact.person": "Человек",
+    "contact.email": "Почта",
+    "contact.phone": "Телефон",
+    "form.name": "Имя",
+    "form.phone": "Телефон",
+    "form.type": "Услуга",
+    "form.message": "Сообщение",
+    "form.submit": "Отправить в WhatsApp",
+    "form.namePh": "Ваше имя",
+    "form.phonePh": "06x xxx xxx",
+    "form.messagePh": "Что вам нужно?",
+    "form.typeWebsite": "Сайт",
+    "form.typeMaintenance": "Поддержка",
+    "form.typeQa": "QA",
+    "form.typeOther": "Другое",
+    "form.needName": "Введите имя.",
+    "form.needPhone": "Введите номер телефона.",
+    "form.opening": "Открываем WhatsApp с вашим сообщением.",
+    "form.hello": "Здравствуйте, Izet, пишу по проекту.",
+    "form.labels": {
+      name: "Имя",
+      phone: "Телефон",
+      type: "Услуга",
+      message: "Сообщение",
+    },
+    "float.aria": "Написать в WhatsApp",
+  },
 };
+
+const LANGS = ["en", "bs", "hr", "sr", "de", "ru"];
+const HTML_LANG = { en: "en", bs: "bs", hr: "hr", sr: "sr-Cyrl", de: "de", ru: "ru" };
+
+function normalizeLang(lang) {
+  return LANGS.includes(lang) ? lang : "en";
+}
 
 const nav = document.querySelector("#nav");
 const toggle = document.querySelector(".menu-toggle");
 
 function applyLanguage(lang) {
-  const pack = translations[lang] || translations.en;
-  document.documentElement.lang = lang === "bs" ? "bs" : "en";
+  const chosen = normalizeLang(lang);
+  const pack = translations[chosen] || translations.en;
+  document.documentElement.lang = HTML_LANG[chosen] || "en";
+  document.documentElement.dataset.lang = chosen;
   document.title = pack["meta.title"];
   document.querySelector('meta[name="description"]').setAttribute("content", pack["meta.description"]);
 
@@ -176,11 +485,11 @@ function applyLanguage(lang) {
   });
 
   document.querySelectorAll("[data-lang]").forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.lang === (lang === "bs" ? "bs" : "en")));
+    button.setAttribute("aria-pressed", String(button.dataset.lang === chosen));
   });
 
   try {
-    localStorage.setItem("alpha-lang", lang === "bs" ? "bs" : "en");
+    localStorage.setItem("alpha-lang", chosen);
   } catch {
     /* private browsing */
   }
@@ -204,7 +513,7 @@ document.querySelectorAll("[data-lang]").forEach((button) => {
 
 let saved = "en";
 try {
-  saved = localStorage.getItem("alpha-lang") === "bs" ? "bs" : "en";
+  saved = normalizeLang(localStorage.getItem("alpha-lang"));
 } catch {
   saved = "en";
 }
@@ -215,8 +524,8 @@ const statusEl = document.querySelector("#form-status");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const lang = document.documentElement.lang === "bs" ? "bs" : "en";
-  const pack = translations[lang];
+  const lang = normalizeLang(document.documentElement.dataset.lang);
+  const pack = translations[lang] || translations.en;
   const data = Object.fromEntries(new FormData(form));
   statusEl.classList.remove("is-error");
 
