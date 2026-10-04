@@ -73,6 +73,7 @@ const translations = {
       message: "Message",
     },
     "float.aria": "Message on WhatsApp",
+    "built.by": "Built by Alpha IT Solutions",
   },
   bs: {
     "meta.title": "Alpha IT Solutions | Web stranice, održavanje i QA",
@@ -148,6 +149,7 @@ const translations = {
       message: "Poruka",
     },
     "float.aria": "Pišite na WhatsApp",
+    "built.by": "Napravio Alpha IT Solutions",
   },
   hr: {
     "meta.title": "Alpha IT Solutions | Web stranice, održavanje i QA",
@@ -223,6 +225,7 @@ const translations = {
       message: "Poruka",
     },
     "float.aria": "Pišite na WhatsApp",
+    "built.by": "Izradio Alpha IT Solutions",
   },
   sr: {
     "meta.title": "Alpha IT Solutions | Веб странице, одржавање и QA",
@@ -298,6 +301,7 @@ const translations = {
       message: "Порука",
     },
     "float.aria": "Пишите на WhatsApp",
+    "built.by": "Направио Alpha IT Solutions",
   },
   de: {
     "meta.title": "Alpha IT Solutions | Webseiten, Wartung und QA",
@@ -373,6 +377,7 @@ const translations = {
       message: "Nachricht",
     },
     "float.aria": "Auf WhatsApp schreiben",
+    "built.by": "Erstellt von Alpha IT Solutions",
   },
   ru: {
     "meta.title": "Alpha IT Solutions | Сайты, поддержка и QA",
@@ -448,6 +453,7 @@ const translations = {
       message: "Сообщение",
     },
     "float.aria": "Написать в WhatsApp",
+    "built.by": "Сделано Alpha IT Solutions",
   },
 };
 
