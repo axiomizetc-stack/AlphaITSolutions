@@ -29,6 +29,18 @@
           "@type": "Person",
           "name": "Izet Čopelj"
         },
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Izet Čopelj",
+            "jobTitle": "Founder"
+          },
+          {
+            "@type": "Person",
+            "name": "Haris Balavac",
+            "jobTitle": "QA"
+          }
+        ],
         "areaServed": "Bosnia and Herzegovina"
       }
     </script>
@@ -51,6 +63,7 @@
       </button>
       <nav id="nav">
         <a href="#o-nama" data-i18n="nav.about">About</a>
+        <a href="#tim" data-i18n="nav.team">Team</a>
         <a href="#usluge" data-i18n="nav.services">Services</a>
         <a href="#radovi" data-i18n="nav.work">Work</a>
         <a href="#qa">QA</a>
@@ -108,15 +121,38 @@
       </section>
 
       <section class="about" id="o-nama">
-        <p class="eyebrow" data-i18n="about.kicker">The team</p>
+        <p class="eyebrow" data-i18n="about.kicker">About</p>
         <h2 data-i18n="about.title">Izet Čopelj leads the work.</h2>
         <p data-i18n="about.text">
-          He has been in IT since 2015, as a software engineer and as a QA engineer. That mix of building and testing is the whole shop. You talk to him, not a desk in between.
+          He has been in IT since 2015, as a software engineer and as a QA engineer. That mix of building and testing is the shop, with dedicated QA beside him. You talk to him, not a desk in between.
         </p>
         <p data-i18n="about.offer">
           We offer QA automation, new websites, mobile-ready pages, maintenance, and other IT ideas when a job does not fit a neat box.
         </p>
         <strong>Izet Čopelj · 2015</strong>
+      </section>
+
+      <section class="team" id="tim">
+        <p class="eyebrow" data-i18n="team.kicker">Our team</p>
+        <h2 data-i18n="team.title">The people on the work.</h2>
+        <div class="team-grid">
+          <article>
+            <figure>
+              <img src="images/izet-copelj.png" alt="Izet Čopelj" width="480" height="480" />
+            </figure>
+            <h3>Izet Čopelj</h3>
+            <p class="team-role" data-i18n="team.izet.role">Founder · Software engineer</p>
+            <p data-i18n="team.izet.text">In IT since 2015. He builds the sites, keeps them after launch, and talks to you directly.</p>
+          </article>
+          <article>
+            <figure>
+              <img src="images/haris-balavac.jpg" alt="Haris Balavac" width="480" height="480" />
+            </figure>
+            <h3>Haris Balavac</h3>
+            <p class="team-role" data-i18n="team.haris.role">Dedicated QA</p>
+            <p data-i18n="team.haris.text">Seven years in the craft. He tests flows, forms, and layout before anything reaches users.</p>
+          </article>
+        </div>
       </section>
 
       <section class="work" id="radovi">
