@@ -142,6 +142,8 @@ nav a:hover { color: var(--ink); }
   letter-spacing: 0.03em;
   min-width: 2.15rem;
   padding: 0.36rem 0.28rem;
+  white-space: nowrap;
+  flex-shrink: 0;
   cursor: pointer;
 }
 .lang button[aria-pressed="true"] {
@@ -498,37 +500,74 @@ footer {
   .menu-toggle { display: inline-block; }
   .header-wa { display: none; }
   .logo img { width: 56px; height: 56px; }
+  .site-header {
+    flex-wrap: wrap;
+    row-gap: 0.45rem;
+  }
+  .header-end {
+    width: 100%;
+    justify-content: center;
+  }
+  .lang {
+    width: 100%;
+    max-width: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-radius: 999px;
+  }
+  .lang button {
+    flex: 1 1 0;
+    min-width: 0;
+    font-size: 0.72rem;
+    padding: 0.42rem 0.2rem;
+  }
   nav {
     display: none;
     position: absolute;
-    top: 4.8rem;
+    top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
+    align-items: center;
     padding: 1rem 6vw 1.2rem;
     background: #e8eee0;
     border-bottom: 1px solid var(--line);
+    text-align: center;
   }
   nav.is-open { display: flex; }
+  .hero, .services, .about, .team, .work, .contact, footer {
+    text-align: center;
+  }
   .hero, .services, .contact, .work-grid, .team-grid, footer, .order-form { grid-template-columns: 1fr; }
   .hero-mark { min-height: 0; }
   .hero-mark img { width: min(58vw, 220px); }
+  .lead, .about p, .contact-lead { margin-inline: auto; }
+  .actions { justify-content: center; }
+  .services article, .work article { justify-items: center; }
+  .team figure { margin: 0 auto 0.95rem; }
+  .work a { margin-inline: auto; }
   .contact { width: min(1080px, calc(100% - 8vw)); }
+  .contact-lead { max-width: none; }
+  footer { justify-content: center; }
   h1 { max-width: none; }
   .wash-a, .wash-b { width: 70vw; height: 70vw; }
   .ring-a, .ring-b { display: none; }
   .about {
-    padding: 3.2rem 0 3.2rem 1.55rem;
+    padding: 3.2rem 0;
   }
   .about::before {
-    left: 0;
-    top: 3.2rem;
+    left: 50%;
+    top: 1.15rem;
+    width: 2.4rem;
+    height: 4px;
+    transform: translateX(-50%);
   }
   .about h2 {
     font-size: clamp(1.85rem, 8vw, 2.4rem);
     line-height: 1.15;
     letter-spacing: -0.03em;
   }
+  .team h2, .work h2 { margin-inline: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
