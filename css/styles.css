@@ -517,7 +517,18 @@ footer {
   h1 { max-width: none; }
   .wash-a, .wash-b { width: 70vw; height: 70vw; }
   .ring-a, .ring-b { display: none; }
-  .about::before { left: 0; }
+  .about {
+    padding: 3.2rem 0 3.2rem 1.55rem;
+  }
+  .about::before {
+    left: 0;
+    top: 3.2rem;
+  }
+  .about h2 {
+    font-size: clamp(1.85rem, 8vw, 2.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
