@@ -2,7 +2,7 @@ const translations = {
   en: {
     "meta.title": "Alpha IT Solutions | websites, maintenance, QA",
     "meta.description":
-      "Alpha IT Solutions, Mostar. Websites, maintenance, and QA automation. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, Mostar. Websites, maintenance, and QA automation.",
     skip: "Skip to content",
     "nav.menu": "Menu",
     "nav.services": "Services",
@@ -30,9 +30,7 @@ const translations = {
     "work.korijenjeLink": "Open Nase korijenje",
     "contact.kicker": "Contact",
     "contact.title": "Write on WhatsApp.",
-    "contact.text": "The form opens WhatsApp with your message already written. You can also write or call.",
-    "contact.email": "Email",
-    "contact.phone": "Phone",
+    "contact.text": "The form opens WhatsApp with your message already written.",
     "form.name": "Name",
     "form.phone": "Phone",
     "form.type": "Service",
@@ -61,7 +59,7 @@ const translations = {
   bs: {
     "meta.title": "Alpha IT Solutions | web stranice, održavanje i QA",
     "meta.description":
-      "Alpha IT Solutions, Mostar. Web stranice, održavanje i QA automatizacija. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, Mostar. Web stranice, održavanje i QA automatizacija.",
     skip: "Preskoči na sadržaj",
     "nav.menu": "Meni",
     "nav.services": "Usluge",
@@ -89,9 +87,7 @@ const translations = {
     "work.korijenjeLink": "Otvori Naše korijenje",
     "contact.kicker": "Kontakt",
     "contact.title": "Pišite na WhatsApp.",
-    "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom. Možete i odmah pisati ili nazvati.",
-    "contact.email": "E-pošta",
-    "contact.phone": "Telefon",
+    "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom.",
     "form.name": "Ime",
     "form.phone": "Telefon",
     "form.type": "Usluga",
@@ -120,7 +116,7 @@ const translations = {
   hr: {
     "meta.title": "Alpha IT Solutions | web stranice, održavanje i QA",
     "meta.description":
-      "Alpha IT Solutions, Mostar. Web stranice, održavanje i QA automatizacija. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, Mostar. Web stranice, održavanje i QA automatizacija.",
     skip: "Preskoči na sadržaj",
     "nav.menu": "Izbornik",
     "nav.services": "Usluge",
@@ -148,9 +144,7 @@ const translations = {
     "work.korijenjeLink": "Otvori Naše korijenje",
     "contact.kicker": "Kontakt",
     "contact.title": "Pišite na WhatsApp.",
-    "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom. Možete i odmah pisati ili nazvati.",
-    "contact.email": "E-pošta",
-    "contact.phone": "Telefon",
+    "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom.",
     "form.name": "Ime",
     "form.phone": "Telefon",
     "form.type": "Usluga",
@@ -179,7 +173,7 @@ const translations = {
   sr: {
     "meta.title": "Alpha IT Solutions | веб странице, одржавање и QA",
     "meta.description":
-      "Alpha IT Solutions, Мостар. Веб странице, одржавање и QA аутоматизација. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, Мостар. Веб странице, одржавање и QA аутоматизација.",
     skip: "Прескочи на садржај",
     "nav.menu": "Мени",
     "nav.services": "Услуге",
@@ -207,9 +201,7 @@ const translations = {
     "work.korijenjeLink": "Отвори Наше коријење",
     "contact.kicker": "Контакт",
     "contact.title": "Пишите на WhatsApp.",
-    "contact.text": "Образац отвара WhatsApp с већ написаном поруком. Можете и одмах писати или назвати.",
-    "contact.email": "Е-пошта",
-    "contact.phone": "Телефон",
+    "contact.text": "Образац отвара WhatsApp с већ написаном поруком.",
     "form.name": "Име",
     "form.phone": "Телефон",
     "form.type": "Услуга",
@@ -238,7 +230,7 @@ const translations = {
   de: {
     "meta.title": "Alpha IT Solutions | Webseiten, Wartung und QA",
     "meta.description":
-      "Alpha IT Solutions, Mostar. Webseiten, Wartung und QA-Automatisierung. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, Mostar. Webseiten, Wartung und QA-Automatisierung.",
     skip: "Zum Inhalt springen",
     "nav.menu": "Menü",
     "nav.services": "Leistungen",
@@ -266,9 +258,7 @@ const translations = {
     "work.korijenjeLink": "Naše korijenje öffnen",
     "contact.kicker": "Kontakt",
     "contact.title": "Schreiben Sie auf WhatsApp.",
-    "contact.text": "Das Formular öffnet WhatsApp mit Ihrer Nachricht schon geschrieben. Sie können auch gleich schreiben oder anrufen.",
-    "contact.email": "E-Mail",
-    "contact.phone": "Telefon",
+    "contact.text": "Das Formular öffnet WhatsApp mit Ihrer Nachricht schon geschrieben.",
     "form.name": "Name",
     "form.phone": "Telefon",
     "form.type": "Leistung",
@@ -297,7 +287,7 @@ const translations = {
   ru: {
     "meta.title": "Alpha IT Solutions | сайты, поддержка и QA",
     "meta.description":
-      "Alpha IT Solutions, Мостар. Сайты, поддержка и QA-автоматизация. axiomizetc@gmail.com · 061 834 552.",
+      "Alpha IT Solutions, Мостар. Сайты, поддержка и QA-автоматизация.",
     skip: "Перейти к содержанию",
     "nav.menu": "Меню",
     "nav.services": "Услуги",
@@ -325,9 +315,7 @@ const translations = {
     "work.korijenjeLink": "Открыть Naše korijenje",
     "contact.kicker": "Контакт",
     "contact.title": "Напишите в WhatsApp.",
-    "contact.text": "Форма открывает WhatsApp с уже написанным сообщением. Можно сразу писать или звонить.",
-    "contact.email": "Почта",
-    "contact.phone": "Телефон",
+    "contact.text": "Форма открывает WhatsApp с уже написанным сообщением.",
     "form.name": "Имя",
     "form.phone": "Телефон",
     "form.type": "Услуга",
